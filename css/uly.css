@@ -818,32 +818,49 @@ a.anchor-block.inline {
 /*
  * Ad Blocks
  */
-/* line 14, ../scss/_ads.scss */
+/* line 7, ../scss/_ads.scss */
+.ad-wrapper {
+  padding-top: .5em;
+  padding-bottom: .5em;
+}
+/* line 12, ../scss/_ads.scss */
+.ad-wrapper.centered {
+  text-align: center;
+}
+/* line 17, ../scss/_ads.scss */
+.ad-wrapper .ad-block {
+  display: block;
+  margin: 0 auto;
+}
+/* line 21, ../scss/_ads.scss */
+.ad-wrapper .ad-block.inline {
+  display: inline-block;
+  margin-left: .5em;
+  margin-right: .5em;
+}
+
+/* line 30, ../scss/_ads.scss */
 .ad-unit {
   padding: 0;
   margin: 0 auto;
 }
-
-/* line 19, ../scss/_ads.scss */
-.half-page {
+/* line 35, ../scss/_ads.scss */
+.ad-unit.half-page {
   height: 600px;
   width: 300px;
 }
-
-/* line 24, ../scss/_ads.scss */
-.billboard {
-  height: 90px;
+/* line 40, ../scss/_ads.scss */
+.ad-unit.billboard {
+  min-height: 90px;
   width: 970px;
 }
-
-/* line 29, ../scss/_ads.scss */
-.leaderboard {
+/* line 45, ../scss/_ads.scss */
+.ad-unit.leaderboard {
   height: 90px;
   width: 728px;
 }
-
-/* line 34, ../scss/_ads.scss */
-.med-rect {
+/* line 50, ../scss/_ads.scss */
+.ad-unit.med-rect {
   height: 250px;
   width: 300px;
 }
