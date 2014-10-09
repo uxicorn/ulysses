@@ -1,0 +1,968 @@
+/*
+ * Ulysses, "uly.css, uly.scss" is intended to take CSS design to the next level.
+ * 
+ * Removing the pain of understanding CSS, 
+ * designers can simply add predefined semantic classes to HTML elements
+ * that quickly create reliably balanced, modular design for web interfaces.
+ *  
+ */
+/*
+ * Preload heavier assets: fonts, icons, gradients, sprites, etc.
+ */
+/*
+ * Base Definitions
+ */
+/* line 6, ../scss/_base.scss */
+body {
+  padding: 0;
+  margin: 0;
+}
+
+/* line 11, ../scss/_base.scss */
+.base-typeface {
+  font-family: sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  color: inherit;
+}
+
+/* line 18, ../scss/_base.scss */
+.base-anchor {
+  text-decoration: none;
+}
+
+/* line 22, ../scss/_base.scss */
+.base-em {
+  font-size: 18px;
+}
+
+/*  .4s feels natural.  */
+/* line 34, ../scss/_base.scss */
+.base-leading {
+  line-height: 1.39;
+}
+
+/* line 38, ../scss/_base.scss */
+.base-kerning {
+  letter-spacing: .013em;
+}
+
+/* line 46, ../scss/_base.scss */
+.base-texture {
+  /* [paper, metal, waves, rain, blotched, thatch, woven, woodgrain, sand, concrete, wisped, brushed, rust] */
+}
+
+/* line 53, ../scss/_base.scss */
+.base-shadow {
+  box-shadow: 0 0 0 transparent;
+  text-shadow: 0 0 0 transparent;
+}
+
+/* Base resets. */
+/*
+ * Text Rendering
+ */
+/* line 6, ../scss/_typesetting.scss */
+main > *,
+header > *,
+section > *,
+article > *,
+footer > *,
+aside > * {
+  text-rendering: optimizeLegibility;
+}
+
+/* line 15, ../scss/_typesetting.scss */
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/*
+ * Headers, sub-heads, & headings elements.
+ */
+/* line 23, ../scss/_typesetting.scss */
+h1, h2,
+h3, h4,
+h5, h6 {
+  line-height: 1.3;
+  margin: 0 auto .39em;
+}
+
+/* line 30, ../scss/_typesetting.scss */
+h1 {
+  font-size: 57px;
+}
+
+/* line 34, ../scss/_typesetting.scss */
+h2 {
+  font-size: 44px;
+}
+
+/* line 38, ../scss/_typesetting.scss */
+h3 {
+  font-size: 31px;
+}
+
+/* line 42, ../scss/_typesetting.scss */
+h4 {
+  font-size: 23px;
+}
+
+/* line 46, ../scss/_typesetting.scss */
+h5 {
+  font-size: 18px;
+  margin-bottom: .49em;
+}
+
+/* line 51, ../scss/_typesetting.scss */
+h6 {
+  font-size: 15px;
+  margin-bottom: .49em;
+}
+
+/* line 56, ../scss/_typesetting.scss */
+.justify {
+  text-align: justify;
+}
+
+/* line 60, ../scss/_typesetting.scss */
+.centered-txt {
+  text-align: center;
+}
+
+/* line 64, ../scss/_typesetting.scss */
+.left-txt {
+  text-align: left;
+}
+
+/* line 68, ../scss/_typesetting.scss */
+.right-txt {
+  text-align: right;
+}
+
+/* line 72, ../scss/_typesetting.scss */
+.action {
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 76px;
+}
+
+/*
+ * Device & orientation type.
+ */
+/* line 82, ../scss/_typesetting.scss */
+.smart-phone.portrait {
+  font-size: 12.301pt;
+}
+
+/* line 86, ../scss/_typesetting.scss */
+.smart-phone.landscape {
+  font-size: 14.545pt;
+}
+
+/* line 90, ../scss/_typesetting.scss */
+.tablet.portrait {
+  font-size: 15.673pt;
+}
+
+/* line 94, ../scss/_typesetting.scss */
+.tablet.landscape {
+  font-size: 17.655pt;
+}
+
+/* line 98, ../scss/_typesetting.scss */
+.desktop {
+  font-size: 17.194pt;
+}
+
+/* line 102, ../scss/_typesetting.scss */
+.smart-tv {
+  font-size: 22.588pt;
+}
+
+/*
+ * Pull Quotes.
+ */
+/* line 110, ../scss/_typesetting.scss */
+blockquote {
+  padding: 19px 38px;
+  margin: 0 auto .49em;
+}
+
+/*
+ * Leading
+ */
+/* line 130, ../scss/_typesetting.scss */
+.leading-1 {
+  line-height: .76 !important;
+  letter-spacing: .125em;
+}
+
+/* line 135, ../scss/_typesetting.scss */
+.leading-_9x {
+  line-height: .49 !important;
+}
+
+/* Type */
+/*
+ * Choose your icon font library of choice.
+ */
+/* Font icons */
+/*
+ * Branding sprite includes brand logos and sponsor/3rd party logos, + graphic embelishments.
+ * Palette includes the 4 color scheme or theme for the web property.
+ */
+/*
+ * Branding Sprite
+ */
+/* line 6, ../scss/_branding.scss */
+.branding {
+  position: relative;
+}
+
+/* line 10, ../scss/_branding.scss */
+.branding .brand {
+  background: url("path/to/branding-sprite.png") no-repeat 0 0;
+}
+
+/* line 14, ../scss/_branding.scss */
+.brand.brand- * {
+  background-position: center center;
+  height: auto;
+  width: auto;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 22, ../scss/_branding.scss */
+.brand-block {
+  margin: 0 auto;
+}
+
+/* line 26, ../scss/_branding.scss */
+.primary .brand {
+  opacity: .94 !important;
+}
+
+/* Branding sprite (partner & third party logos). */
+/*
+ * Banners & badges.
+ */
+/* line 5, ../scss/_badgers.scss */
+.banner {
+  background-color: #f40;
+  z-index: 3;
+  font-family: 'Passion One', sans-serif !important;
+  letter-spacing: .013em !important;
+}
+
+/* line 12, ../scss/_badgers.scss */
+.banner:before {
+  display: block;
+  content: " ";
+  position: absolute;
+  z-index: 0;
+  width: 0;
+  height: 0;
+  border-top: 38px solid #e30;
+  border-left: 38px solid transparent;
+  left: -32px;
+  top: 49px;
+}
+
+/* line 27, ../scss/_badgers.scss */
+.banner .tip:before {
+  display: block;
+  content: " ";
+  position: absolute;
+  z-index: 0;
+  width: 0;
+  height: 0;
+  border-bottom: 38px solid #e30;
+  border-left: 38px solid transparent;
+  left: -32px;
+  top: 76px;
+}
+
+/* line 43, ../scss/_badgers.scss */
+.banner:after {
+  display: block;
+  content: " ";
+  position: absolute;
+  z-index: 0;
+  width: 0;
+  height: 0;
+  border-top: 38px solid #e30;
+  border-right: 38px solid transparent;
+  right: -32px;
+  top: 49px;
+}
+
+/* line 57, ../scss/_badgers.scss */
+.banner .tip:after {
+  display: block;
+  content: " ";
+  position: absolute;
+  z-index: 0;
+  width: 0;
+  height: 0;
+  border-bottom: 38px solid #e30;
+  border-right: 38px solid transparent;
+  right: -32px;
+  top: 76px;
+}
+
+/* line 72, ../scss/_badgers.scss */
+.banner-wrapper {
+  max-width: 92%;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* Banners, ribbons & badges. */
+/* shapes module. */
+/*
+ * Pallete
+ * 
+ * Refer to: http://colours.neilorangepeel.com/
+ */
+/* line 12, ../scss/_palette.scss */
+.bg-lite-smoke {
+  background-color: #efefef;
+}
+
+/* line 16, ../scss/_palette.scss */
+.bg-medium-lite-smoke {
+  background-color: #dfdfdf;
+}
+
+/* line 20, ../scss/_palette.scss */
+.bg-medium-smoke {
+  background-color: #cfcfcf;
+}
+
+/* line 24, ../scss/_palette.scss */
+.bg-smoke {
+  background-color: #bfbfbf;
+}
+
+/* line 28, ../scss/_palette.scss */
+.bg-dark-smoke {
+  background-color: #afafaf;
+}
+
+/* line 32, ../scss/_palette.scss */
+.bg-darker-smoke {
+  background-color: #9f9f9f;
+}
+
+/* line 36, ../scss/_palette.scss */
+.bg-lite-gray {
+  background-color: #8f8f8f;
+}
+
+/* line 40, ../scss/_palette.scss */
+.bg-gray {
+  background-color: #7f7f7f;
+}
+
+/* line 44, ../scss/_palette.scss */
+.bg-dark-gray {
+  background-color: #6f6f6f;
+}
+
+/* line 48, ../scss/_palette.scss */
+.bg-lite-slate {
+  background-color: #5f5f5f;
+}
+
+/* line 52, ../scss/_palette.scss */
+.bg-slate {
+  background-color: #4f4f4f;
+}
+
+/* line 56, ../scss/_palette.scss */
+.bg-lite-charcoal {
+  background-color: #3f3f3f;
+}
+
+/* line 60, ../scss/_palette.scss */
+.bg-charcoal {
+  background-color: #2f2f2f;
+}
+
+/* line 64, ../scss/_palette.scss */
+.bg-lite-black {
+  background-color: #1f1f1f;
+}
+
+/* line 68, ../scss/_palette.scss */
+.bg-off-black {
+  background-color: #0f0f0f;
+}
+
+/* line 72, ../scss/_palette.scss */
+.bg-orange {
+  background-color: orange;
+}
+
+/* line 76, ../scss/_palette.scss */
+.bg-dark-orange {
+  background-color: darkorange;
+}
+
+/* line 80, ../scss/_palette.scss */
+.bg-teal {
+  background-color: teal;
+}
+
+/* line 84, ../scss/_palette.scss */
+.bg-dark-cyan {
+  background-color: darkcyan;
+}
+
+/* line 88, ../scss/_palette.scss */
+.txt-white {
+  color: white;
+}
+
+/* line 92, ../scss/_palette.scss */
+.bg-pink {
+  background-color: pink;
+}
+
+/* Swatches, background & typeface color, texture patterns. */
+/*
+ * Block level items defining structure and rendering flows.
+ */
+/*
+ * Float clearing
+ */
+/* line 6, ../scss/_cascade.scss */
+.clear {
+  clear: both;
+}
+
+/* line 10, ../scss/_cascade.scss */
+.clear:after {
+  content: ' ';
+  display: table;
+  clear: both;
+}
+
+/* line 16, ../scss/_cascade.scss */
+.clear-left {
+  clear: left;
+}
+
+/* line 20, ../scss/_cascade.scss */
+.clear-right {
+  clear: right;
+}
+
+@media (min-width: 481px) {
+  /* line 26, ../scss/_cascade.scss */
+  .rtl .cascade-reverse,
+  .rtl .cascade-reverse > *,
+  .ltr .cascade,
+  .ltr .cascade > * {
+    float: left;
+  }
+
+  /* line 33, ../scss/_cascade.scss */
+  .ltr .cascade-reverse,
+  .ltr .cascade-reverse > *,
+  .rtl .cascade,
+  .rtl .cascade > * {
+    float: right;
+  }
+}
+/* Floats & clearing. */
+/*
+ * Wrappers & Containers
+ */
+/* line 6, ../scss/_containment.scss */
+.wrapper {
+  height: auto;
+  width: auto;
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 14, ../scss/_containment.scss */
+.container {
+  position: relative;
+  margin: 0 auto;
+  overflow: auto;
+}
+
+/* line 20, ../scss/_containment.scss */
+.container.cropped {
+  overflow: hidden;
+}
+
+/* line 24, ../scss/_containment.scss */
+.container.spill {
+  overflow: visible;
+}
+
+/* line 28, ../scss/_containment.scss */
+.container.inline {
+  display: inline-block;
+  width: auto;
+}
+
+@media (min-width: 768px) {
+  /* line 35, ../scss/_containment.scss */
+  .primary.container {
+    width: 988px;
+    margin: 2.6em auto 4.9em;
+  }
+}
+/* line 42, ../scss/_containment.scss */
+.primary.container {
+  overflow-x: hidden;
+}
+
+/* Containers. */
+/*
+ * Layout Ratios
+ * 
+ * Formula is Width by Height
+ */
+/* line 8, ../scss/_structure.scss */
+.halfbyhalf {
+  height: 38px;
+  width: 38px;
+}
+
+/* line 13, ../scss/_structure.scss */
+.fourthby4th {
+  height: 19px;
+  width: 19px;
+}
+
+/* line 18, ../scss/_structure.scss */
+.three4thbythree4th {
+  height: 57px;
+  width: 57px;
+}
+
+/* line 23, ../scss/_structure.scss */
+.fourthby4th {
+  height: 9.5px;
+  width: 9.5px;
+}
+
+/* line 28, ../scss/_structure.scss */
+.oneby1 {
+  height: 76px;
+  width: 76px;
+}
+
+/* line 33, ../scss/_structure.scss */
+.oneby2 {
+  height: 76px;
+  width: 152px;
+}
+
+/* line 38, ../scss/_structure.scss */
+.oneby3 {
+  height: 76px;
+  width: 228px;
+}
+
+/* line 43, ../scss/_structure.scss */
+.oneby4 {
+  height: 76px;
+  width: 304px;
+}
+
+/* line 48, ../scss/_structure.scss */
+.oneby5 {
+  height: 76px;
+  width: 380px;
+}
+
+/* line 53, ../scss/_structure.scss */
+.oneby8 {
+  height: 76px;
+  width: 608px;
+}
+
+/* line 58, ../scss/_structure.scss */
+.oneby1.circular {
+  border-radius: 5em;
+}
+
+/* line 62, ../scss/_structure.scss */
+.twoby1 {
+  height: 76px;
+  width: 152px;
+}
+
+/* line 67, ../scss/_structure.scss */
+.twoby2 {
+  height: 152px;
+  width: 152px;
+}
+
+/* line 72, ../scss/_structure.scss */
+.twoby3 {
+  width: 152px;
+  height: 228px;
+}
+
+/* line 89, ../scss/_structure.scss */
+.twoby2.circular {
+  border-radius: 8em;
+}
+
+/* line 93, ../scss/_structure.scss */
+.threeby1 {
+  height: 76px;
+  width: 304px;
+}
+
+/* line 98, ../scss/_structure.scss */
+.threeby2 {
+  width: 228px;
+  height: 152px;
+}
+
+/* line 103, ../scss/_structure.scss */
+.threeby3 {
+  height: 228px;
+  width: 228px;
+}
+
+/* line 120, ../scss/_structure.scss */
+.threeby3.circular {
+  border-radius: 13em;
+}
+
+/* line 136, ../scss/_structure.scss */
+.fourby4 {
+  width: 304px;
+  height: 304px;
+}
+
+/* line 141, ../scss/_structure.scss */
+.fourby5 {
+  width: 304px;
+  height: 380px;
+}
+
+@media (min-width: 480px) {
+  /* line 151, ../scss/_structure.scss */
+  .fiveby1 {
+    height: 76px;
+    width: 380px;
+  }
+
+  /* line 156, ../scss/_structure.scss */
+  .fiveby2 {
+    height: 152px;
+    width: 380px;
+  }
+
+  /* line 161, ../scss/_structure.scss */
+  .fiveby3 {
+    width: 380px;
+    height: 228px;
+  }
+
+  /* line 166, ../scss/_structure.scss */
+  .fiveby4 {
+    width: 380px;
+    height: 304px;
+  }
+
+  /* line 171, ../scss/_structure.scss */
+  .fiveby5 {
+    width: 380px;
+    height: 380px;
+  }
+
+  /* line 176, ../scss/_structure.scss */
+  .fiveby5.circular {
+    border-radius: 21em;
+  }
+
+  /* line 188, ../scss/_structure.scss */
+  .eightby2 {
+    width: 608px;
+    height: 152px;
+  }
+
+  /* line 193, ../scss/_structure.scss */
+  .eightby3 {
+    width: 608px;
+    height: 228px;
+  }
+
+  /* line 202, ../scss/_structure.scss */
+  .eightby5 {
+    width: 608px;
+    height: 380px;
+  }
+
+  /* line 207, ../scss/_structure.scss */
+  .eightby8 {
+    width: 608px;
+    height: 608px;
+  }
+
+  /* line 212, ../scss/_structure.scss */
+  .eightby8.circular {
+    border-radius: 34em;
+  }
+}
+/* line 218, ../scss/_structure.scss */
+.full-width {
+  width: 100%;
+}
+
+/*
+ * Columns.
+ */
+/*
+ * Grouping.
+ */
+/* line 236, ../scss/_structure.scss */
+.masthead {
+  margin-bottom: 2.6em !important;
+}
+
+/*
+ * Shapes.
+ */
+/* Dimensional structure. */
+/*
+ * Corners.
+ */
+/*
+ * Borders.
+ */
+/* Circlular elements, rounded corners, borders & box shadows. */
+/*
+ * Content level elements.
+ */
+/*
+ * Anchor blocks
+ */
+/* line 6, ../scss/_anchors.scss */
+a.anchor-block {
+  display: block;
+  margin: 0 auto;
+  padding: 0;
+  position: relative;
+  height: 100%;
+}
+
+/* line 14, ../scss/_anchors.scss */
+a.anchor-block.inline {
+  display: inline-block;
+}
+
+/*
+ * Anchor Lists & Anchor Bars
+ */
+/* line 27, ../scss/_anchors.scss */
+.anchor-list > a {
+  display: block;
+}
+
+/* line 31, ../scss/_anchors.scss */
+.anchor-bar > a {
+  display: inline-block;
+}
+
+/* Default anchor styling, anchor blocks, anchor bars, & anchor lists. */
+/*
+ * 
+ */
+/* Sections, articles, asides, etc. */
+/* List styling */
+/*
+ * 
+ */
+/* line 13, ../scss/_form-el.scss */
+.input-wrapper .input-el,
+.input-el {
+  border: 0px;
+}
+
+/* line 18, ../scss/_form-el.scss */
+.input-el.centered-txt {
+  padding: 0;
+}
+
+/* line 25, ../scss/_form-el.scss */
+.input-wrapper {
+  margin-bottom: .49em;
+}
+
+/* Form module. */
+/* table module. */
+/* media module. */
+/* navigation module. */
+/*
+ * States -- :hover, :active, :focus, :disabled, etc.
+ */
+/* state.css */
+/*
+ * Additional, non-native components.
+ */
+/*
+ * Ad Blocks
+ */
+/* line 14, ../scss/_ads.scss */
+.ad-unit {
+  padding: 0;
+  margin: 0 auto;
+}
+
+/* line 19, ../scss/_ads.scss */
+.half-page {
+  height: 600px;
+  width: 300px;
+}
+
+/* line 24, ../scss/_ads.scss */
+.billboard {
+  height: 90px;
+  width: 970px;
+}
+
+/* line 29, ../scss/_ads.scss */
+.leaderboard {
+  height: 90px;
+  width: 728px;
+}
+
+/* line 34, ../scss/_ads.scss */
+.med-rect {
+  height: 250px;
+  width: 300px;
+}
+
+/* IAB ad packages (standard & rising stars). */
+/*
+ * Utility classes.
+ */
+/*
+ * General utility classes.
+ */
+/* line 6, ../scss/_utility.scss */
+a {
+  text-decoration: none;
+}
+
+/* line 10, ../scss/_utility.scss */
+.action {
+  text-transform: uppercase;
+  letter-spacing: .0148em;
+}
+
+/* line 15, ../scss/_utility.scss */
+.action:hover {
+  text-decoration: none !important;
+}
+
+/* line 19, ../scss/_utility.scss */
+.v-middle {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* line 25, ../scss/_utility.scss */
+.full-height {
+  height: 100%;
+}
+
+/* General utility classes */
+/*
+ * Zoom
+ */
+/* line 6, ../scss/_scale.scss */
+.zoom-10 {
+  zoom: .13;
+  -moz-transform: scale(0.13);
+}
+
+/* line 11, ../scss/_scale.scss */
+.zoom-25 {
+  zoom: .26;
+  -moz-transform: scale(0.26);
+}
+
+/* line 16, ../scss/_scale.scss */
+.zoom-33 {
+  zoom: .33;
+  -moz-transform: scale(0.33);
+}
+
+/* line 21, ../scss/_scale.scss */
+.zoom-40 {
+  zoom: .39;
+  -moz-transform: scale(0.39);
+}
+
+/* line 26, ../scss/_scale.scss */
+.zoom-50 {
+  zoom: .49;
+  -moz-transform: scale(0.49);
+}
+
+/* line 31, ../scss/_scale.scss */
+.zoom-66 {
+  zoom: .67;
+  -moz-transform: scale(0.67);
+}
+
+/* line 36, ../scss/_scale.scss */
+.zoom-75 {
+  zoom: .76;
+  -moz-transform: scale(0.76);
+}
+
+/* line 41, ../scss/_scale.scss */
+.zoom-88 {
+  zoom: .85;
+  -moz-transform: scale(0.85);
+}
+
+/* line 46, ../scss/_scale.scss */
+.zoom-95 {
+  zoom: .94;
+  -moz-transform: scale(0.94);
+}
+
+/* line 51, ../scss/_scale.scss */
+.zoom-10, .zoom-25, .zoom-33,
+.zoom-40, .zoom-50, .zoom-66,
+.zoom-75, .zoom-85, .zoom-88,
+.zoom-95 {
+  display: block;
+}
+
+@media (min-width: 481px) {
+  /* line 59, ../scss/_scale.scss */
+  .zoom-1_5x {
+    zoom: 1.48;
+  }
+
+  /* line 63, ../scss/_scale.scss */
+  .zoom-1_25x {
+    zoom: 1.25;
+  }
+
+  /* line 67, ../scss/_scale.scss */
+  .zoom-1_1x {
+    zoom: 1.13;
+  }
+}
+/* Sprite scaling & zoom levels. */

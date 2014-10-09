@@ -1,0 +1,44 @@
+
+/*
+ * Wrappers & Containers
+ */
+
+.wrapper {
+  height: auto;
+  width: auto;
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  position: relative;
+  margin: 0 auto;
+  overflow: auto;
+}
+
+.container.cropped {
+  overflow: hidden;
+}
+
+.container.spill {
+  overflow: visible;
+}
+
+.container.inline {
+  display: inline-block;
+  width: auto;
+}
+
+@media (min-width: 768px) {
+  
+  .primary.container {
+    width: 988px; 
+    margin: 2.6em auto 4.9em;
+  }
+
+}
+
+.primary.container {
+  overflow-x: hidden;
+}

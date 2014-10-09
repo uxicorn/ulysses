@@ -1,0 +1,252 @@
+
+/*
+ * Layout Ratios
+ * 
+ * Formula is Width by Height
+ */
+
+.halfbyhalf {
+  height: 38px;
+  width: 38px;
+}
+
+.fourthby4th {
+  height: 19px;
+  width: 19px;
+}
+
+.three4thbythree4th {
+  height: 57px;
+  width: 57px;
+}
+
+.fourthby4th {
+  height: 9.5px;
+  width: 9.5px;
+}
+
+.oneby1 {
+  height: 76px; 
+  width: 76px;
+}
+
+.oneby2 {
+  height: 76px;
+  width: 152px;
+}
+
+.oneby3 {
+  height: 76px;
+  width: 228px;
+}
+
+.oneby4 {
+  height: 76px;
+  width: 304px;
+}
+
+.oneby5 {
+  height: 76px;
+  width: 380px;
+}
+
+.oneby8 {
+  height: 76px;
+  width: 608px;
+}
+
+.oneby1.circular {
+  border-radius: 5em;
+}
+
+.twoby1 {
+  height: 76px; 
+  width: 152px; 
+}
+
+.twoby2 {
+  height: 152px; 
+  width: 152px; 
+}
+
+.twoby3 {
+  width: 152px;
+  height: 228px;
+}
+
+.twoby4 {
+  
+}
+
+.twoby5 {
+  
+}
+
+.twoby8 {
+  
+}
+
+.twoby2.circular {
+   border-radius: 8em; 
+}
+
+.threeby1 {
+  height: 76px; 
+  width: 304px;
+}
+
+.threeby2 {
+  width: 228px; 
+  height: 152px;
+}
+
+.threeby3 {
+  height: 228px; 
+  width: 228px; 
+}
+
+.threeby4 {
+  
+}
+
+.threeby5 {
+  
+}
+
+.threeby8 {
+  
+}
+
+.threeby3.circular {
+  border-radius: 13em;
+}
+
+.fourby1 {
+  
+}
+
+.fourby2 {
+  
+}
+
+.fourby3 {
+  
+}
+
+.fourby4 {
+  width: 304px;
+  height: 304px;
+}
+
+.fourby5 {
+  width: 304px;
+  height: 380px;
+}
+
+.fourby8 {
+  
+}
+
+@media (min-width: 480px) {
+.fiveby1 {
+  height: 76px; 
+  width: 380px; 
+}
+
+.fiveby2 {
+  height: 152px; 
+  width: 380px; 
+}
+
+.fiveby3 {
+  width: 380px; 
+  height: 228px;
+}
+
+.fiveby4 {
+  width: 380px;
+  height: 304px;
+}
+
+.fiveby5 {
+  width: 380px; 
+  height: 380px;
+}
+
+.fiveby5.circular {
+  border-radius: 21em; 
+}
+
+.fiveby8 {
+
+}
+
+.eightby1 {
+  
+}
+
+.eightby2 {
+  width: 608px;
+  height: 152px;
+}
+
+.eightby3 {
+  width: 608px;
+  height: 228px;
+}
+
+.eightby4 {
+  
+}
+
+.eightby5 {
+  width: 608px; 
+  height: 380px;
+}
+
+.eightby8 {
+  width: 608px; 
+  height: 608px;
+}
+
+.eightby8.circular {
+  border-radius: 34em;
+}
+
+}
+
+.full-width {
+  width: 100%;
+}
+
+/*
+ * Columns.
+ */
+
+.col-group {}
+.column-wrapper {}
+.col-primary {}
+.col-secondary {}
+.col-tertiary {}
+
+/*
+ * Grouping.
+ */
+
+.masthead {
+  margin-bottom: 2.6em !important;
+}
+.mast-wrapper {}
+
+
+/*
+ * Shapes.
+ */
+
+.indicator {}
+.ribbon {}
+.trapezoid {}
+
+
+
+

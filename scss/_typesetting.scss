@@ -1,0 +1,138 @@
+
+/*
+ * Text Rendering
+ */
+
+main > *,
+header > *,
+section > *,
+article > *,
+footer > *,
+aside > * {
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/*
+ * Headers, sub-heads, & headings elements.
+ */
+
+h1, h2, 
+h3, h4,
+h5, h6 {
+  line-height: 1.3; 
+  margin: 0 auto .39em;
+}
+
+h1 {
+  font-size: 57px; 
+}
+
+h2 {
+  font-size: 44px;
+}
+
+h3 {
+  font-size: 31px;
+}
+
+h4 {
+  font-size: 23px;
+}
+
+h5 {
+  font-size: 18px; 
+  margin-bottom: .49em;
+}
+
+h6 {
+  font-size: 15px;
+  margin-bottom: .49em;
+}
+
+.justify {
+  text-align: justify;
+}
+
+.centered-txt {
+  text-align: center;
+}
+
+.left-txt {
+  text-align: left;
+}
+
+.right-txt {
+  text-align: right;
+}
+
+.action {
+  text-align: center; 
+  text-transform: uppercase; 
+  line-height: 76px;
+}
+
+/*
+ * Device & orientation type.
+ */
+
+.smart-phone.portrait {
+  font-size: 12.301pt; 
+}
+
+.smart-phone.landscape {
+  font-size: 14.545pt;
+}
+
+.tablet.portrait {
+  font-size: 15.673pt;
+}
+
+.tablet.landscape {
+  font-size: 17.655pt;
+}
+
+.desktop {
+  font-size: 17.194pt;
+}
+
+.smart-tv {
+  font-size: 22.588pt;
+}
+
+/*
+ * Pull Quotes.
+ */
+
+blockquote {
+  padding: 19px 38px;
+  margin: 0 auto .49em;
+}
+
+.pullquote {}
+.pullquote.left {}
+.pullquote.right {}
+
+.pullquote-wrapper {}
+.pullquote-group {}
+.pullquote-content {}
+.pullquote-header {}
+.pullquote-footer {}
+.pullquote-category {}
+
+/*
+ * Leading
+ */
+
+.leading-1 {
+  line-height: .76 !important;
+  letter-spacing: .125em;
+}
+
+.leading-_9x {
+  line-height: .49 !important;
+}
+

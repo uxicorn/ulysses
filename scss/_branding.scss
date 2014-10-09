@@ -1,0 +1,28 @@
+
+/*
+ * Branding Sprite
+ */
+
+.branding {
+  position: relative;
+}
+
+.branding .brand {
+  background: url("path/to/branding-sprite.png") no-repeat 0 0; 
+}
+
+.brand.brand- * {
+  background-position: center center;
+  height: auto;
+  width: auto;
+  margin: 0;
+  padding: 0;
+}
+
+.brand-block {
+  margin: 0 auto;
+}
+
+.primary .brand {
+  opacity: .94 !important;
+}

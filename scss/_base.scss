@@ -1,0 +1,59 @@
+
+/*
+ * Base Definitions
+ */
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.base-typeface {
+  font-family:  sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  color: inherit;
+}
+
+.base-anchor {
+  text-decoration: none;
+}
+
+.base-em {
+  font-size: 18px;
+}
+
+.base-gradient {
+  
+}
+
+.base-transition {
+  
+} /*  .4s feels natural.  */
+
+.base-leading {
+  line-height: 1.39;
+}
+
+.base-kerning {
+  letter-spacing: .013em;
+}
+
+.base-bgcolor {
+  
+}
+
+.base-texture {
+  /* [paper, metal, waves, rain, blotched, thatch, woven, woodgrain, sand, concrete, wisped, brushed, rust] */
+}
+
+.base-padding {}
+.base-margin {}
+.base-radius {}
+.base-shadow {
+  box-shadow: 0 0 0 transparent;
+  text-shadow: 0 0 0 transparent;
+}
+
+.base-weight {}
+

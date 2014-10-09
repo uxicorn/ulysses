@@ -1,0 +1,74 @@
+
+/*
+ * Zoom
+ */
+
+.zoom-10 {
+  zoom: .13;
+  -moz-transform: scale(.13);
+}
+
+.zoom-25 {
+  zoom: .26;
+  -moz-transform: scale(.26);
+}
+
+.zoom-33 {
+  zoom: .33;
+  -moz-transform: scale(.33);
+}
+
+.zoom-40 {
+  zoom: .39;
+  -moz-transform: scale(.39);
+}
+
+.zoom-50 {
+  zoom: .49;
+  -moz-transform: scale(.49);
+}
+
+.zoom-66 {
+  zoom: .67;
+  -moz-transform: scale(.67);
+}
+
+.zoom-75 {
+  zoom: .76;
+  -moz-transform: scale(.76);
+}
+
+.zoom-88 {
+  zoom: .85;
+  -moz-transform: scale(.85);
+}
+
+.zoom-95 {
+  zoom: .94;
+  -moz-transform: scale(.94);
+}
+
+.zoom-10, .zoom-25, .zoom-33,
+.zoom-40, .zoom-50, .zoom-66,
+.zoom-75, .zoom-85, .zoom-88,
+.zoom-95 {
+  display: block;
+}
+
+@media (min-width: 481px) {
+  .zoom-1_5x {
+    zoom: 1.48;
+  }
+  
+  .zoom-1_25x {
+    zoom: 1.25;
+  }
+  
+  .zoom-1_1x {
+    zoom: 1.13;
+  }
+}
+
+.zoom-wrapper {
+  
+}

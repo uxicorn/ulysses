@@ -1,0 +1,76 @@
+/*
+ * Banners & badges.
+ */
+
+.banner {
+  background-color: #f40;
+  z-index: 3;
+  font-family: 'Passion One', sans-serif !important;
+  letter-spacing: .013em !important;
+}
+
+.banner:before {
+  display: block;
+  content: ' ' ;
+  position: absolute;
+  z-index: 0;
+  
+  width: 0;
+  height: 0;
+  border-top: 38px solid #e30;
+  border-left: 38px solid transparent;
+  
+  left: -32px;
+  top: 49px;
+}
+
+.banner .tip:before {
+  display: block;
+  content: ' ' ;
+  position: absolute;
+  z-index: 0;
+  
+  width: 0;
+  height: 0;
+  border-bottom: 38px solid #e30;
+  border-left: 38px solid transparent;
+    
+  left: -32px;
+  top: 76px;
+}
+
+
+.banner:after {
+  display: block;
+  content: ' ' ;
+  position: absolute;
+  z-index: 0;
+  
+  width: 0;
+  height: 0;
+  border-top: 38px solid #e30;
+  border-right: 38px solid transparent;
+  right: -32px;
+  top: 49px;
+}
+
+.banner .tip:after {
+  display: block;
+  content: ' ' ;
+  position: absolute;
+  z-index: 0;
+  
+  width: 0;
+  height: 0;
+  border-bottom: 38px solid #e30;
+  border-right: 38px solid transparent;
+  
+  right: -32px;
+  top: 76px;
+}
+
+.banner-wrapper {
+  max-width: 92%;
+  width: 100%;
+  margin: 0 auto;
+}

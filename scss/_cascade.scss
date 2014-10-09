@@ -1,0 +1,40 @@
+
+/*
+ * Float clearing
+ */
+
+.clear {
+  clear: both;
+}
+
+.clear:after {
+  content: ' ';
+  display: table;
+  clear: both;
+}
+
+.clear-left {
+  clear: left;
+}
+
+.clear-right {
+  clear: right;
+}
+
+@media (min-width: 481px) {
+  
+  .rtl .cascade-reverse,
+  .rtl .cascade-reverse > *,
+  .ltr .cascade,
+  .ltr .cascade > * {
+    float: left;
+  }
+  
+  .ltr .cascade-reverse,
+  .ltr .cascade-reverse > *,
+  .rtl .cascade,
+  .rtl .cascade > * {
+    float: right;
+  }
+
+}
