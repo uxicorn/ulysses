@@ -1,24 +1,24 @@
-/*
+/* ========================================================================== 
  * Ulysses, "uly.css, uly.scss" is intended to take CSS design to the next level.
  * 
  * Removing the pain of understanding CSS, 
- * designers can simply add predefined semantic classes to HTML elements
- * that quickly create reliably balanced, modular design for web interfaces.
+ * designers can simply add predefined  classes to HTML elements
+ * quickly creating reliably balanced, modular design.
  *  
- */
+   ========================================================================== */
 /*
  * Preload heavier assets: fonts, icons, gradients, sprites, etc.
  */
-/*
+/* ==========================================================================
  * Base Definitions
- */
-/* line 6, ../scss/_base.scss */
+   ========================================================================== */
+/* line 5, ../scss/_base.scss */
 body {
   padding: 0;
   margin: 0;
 }
 
-/* line 11, ../scss/_base.scss */
+/* line 10, ../scss/_base.scss */
 .base-typeface {
   font-family: sans-serif;
   font-weight: normal;
@@ -26,43 +26,46 @@ body {
   color: inherit;
 }
 
-/* line 18, ../scss/_base.scss */
+/* line 17, ../scss/_base.scss */
 .base-anchor {
   text-decoration: none;
 }
 
-/* line 22, ../scss/_base.scss */
+/* line 21, ../scss/_base.scss */
 .base-em {
   font-size: 18px;
 }
 
 /*  .4s feels natural.  */
-/* line 34, ../scss/_base.scss */
+/* line 33, ../scss/_base.scss */
 .base-leading {
   line-height: 1.39;
 }
 
-/* line 38, ../scss/_base.scss */
+/* line 37, ../scss/_base.scss */
 .base-kerning {
   letter-spacing: .013em;
 }
 
-/* line 46, ../scss/_base.scss */
+/* line 45, ../scss/_base.scss */
 .base-texture {
   /* [paper, metal, waves, rain, blotched, thatch, woven, woodgrain, sand, concrete, wisped, brushed, rust] */
 }
 
-/* line 53, ../scss/_base.scss */
+/* line 52, ../scss/_base.scss */
 .base-shadow {
   box-shadow: 0 0 0 transparent;
   text-shadow: 0 0 0 transparent;
 }
 
 /* Base resets. */
+/* ========================================================================== 
+ * Typesetting
+   ========================================================================== */
 /*
  * Text Rendering
  */
-/* line 6, ../scss/_typesetting.scss */
+/* line 10, ../scss/_typesetting.scss */
 main > *,
 header > *,
 section > *,
@@ -72,7 +75,7 @@ aside > * {
   text-rendering: optimizeLegibility;
 }
 
-/* line 15, ../scss/_typesetting.scss */
+/* line 19, ../scss/_typesetting.scss */
 body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
@@ -80,7 +83,7 @@ body {
 /*
  * Headers, sub-heads, & headings elements.
  */
-/* line 23, ../scss/_typesetting.scss */
+/* line 27, ../scss/_typesetting.scss */
 h1, h2,
 h3, h4,
 h5, h6 {
@@ -88,59 +91,59 @@ h5, h6 {
   margin: 0 auto .39em;
 }
 
-/* line 30, ../scss/_typesetting.scss */
+/* line 34, ../scss/_typesetting.scss */
 h1 {
   font-size: 57px;
 }
 
-/* line 34, ../scss/_typesetting.scss */
+/* line 38, ../scss/_typesetting.scss */
 h2 {
   font-size: 44px;
 }
 
-/* line 38, ../scss/_typesetting.scss */
+/* line 42, ../scss/_typesetting.scss */
 h3 {
   font-size: 31px;
 }
 
-/* line 42, ../scss/_typesetting.scss */
+/* line 46, ../scss/_typesetting.scss */
 h4 {
   font-size: 23px;
 }
 
-/* line 46, ../scss/_typesetting.scss */
+/* line 50, ../scss/_typesetting.scss */
 h5 {
   font-size: 18px;
   margin-bottom: .49em;
 }
 
-/* line 51, ../scss/_typesetting.scss */
+/* line 55, ../scss/_typesetting.scss */
 h6 {
   font-size: 15px;
   margin-bottom: .49em;
 }
 
-/* line 56, ../scss/_typesetting.scss */
+/* line 60, ../scss/_typesetting.scss */
 .justify {
   text-align: justify;
 }
 
-/* line 60, ../scss/_typesetting.scss */
+/* line 64, ../scss/_typesetting.scss */
 .centered-txt {
   text-align: center;
 }
 
-/* line 64, ../scss/_typesetting.scss */
+/* line 68, ../scss/_typesetting.scss */
 .left-txt {
   text-align: left;
 }
 
-/* line 68, ../scss/_typesetting.scss */
+/* line 72, ../scss/_typesetting.scss */
 .right-txt {
   text-align: right;
 }
 
-/* line 72, ../scss/_typesetting.scss */
+/* line 76, ../scss/_typesetting.scss */
 .action {
   text-align: center;
   text-transform: uppercase;
@@ -150,32 +153,32 @@ h6 {
 /*
  * Device & orientation type.
  */
-/* line 82, ../scss/_typesetting.scss */
+/* line 86, ../scss/_typesetting.scss */
 .smart-phone.portrait {
   font-size: 12.301pt;
 }
 
-/* line 86, ../scss/_typesetting.scss */
+/* line 90, ../scss/_typesetting.scss */
 .smart-phone.landscape {
   font-size: 14.545pt;
 }
 
-/* line 90, ../scss/_typesetting.scss */
+/* line 94, ../scss/_typesetting.scss */
 .tablet.portrait {
   font-size: 15.673pt;
 }
 
-/* line 94, ../scss/_typesetting.scss */
+/* line 98, ../scss/_typesetting.scss */
 .tablet.landscape {
   font-size: 17.655pt;
 }
 
-/* line 98, ../scss/_typesetting.scss */
+/* line 102, ../scss/_typesetting.scss */
 .desktop {
   font-size: 17.194pt;
 }
 
-/* line 102, ../scss/_typesetting.scss */
+/* line 106, ../scss/_typesetting.scss */
 .smart-tv {
   font-size: 22.588pt;
 }
@@ -183,7 +186,7 @@ h6 {
 /*
  * Pull Quotes.
  */
-/* line 110, ../scss/_typesetting.scss */
+/* line 114, ../scss/_typesetting.scss */
 blockquote {
   padding: 19px 38px;
   margin: 0 auto .49em;
@@ -192,140 +195,34 @@ blockquote {
 /*
  * Leading
  */
-/* line 130, ../scss/_typesetting.scss */
+/* line 134, ../scss/_typesetting.scss */
 .leading-1 {
   line-height: .76 !important;
   letter-spacing: .125em;
 }
 
-/* line 135, ../scss/_typesetting.scss */
+/* line 139, ../scss/_typesetting.scss */
 .leading-_9x {
   line-height: .49 !important;
 }
 
 /* Type */
-/*
+/* ========================================================================== 
  * Choose your icon font library of choice.
- */
+   ========================================================================== */
 /* Font icons */
 /*
  * Branding sprite includes brand logos and sponsor/3rd party logos, + graphic embelishments.
  * Palette includes the 4 color scheme or theme for the web property.
  */
-/*
- * Branding Sprite
- */
-/* line 6, ../scss/_branding.scss */
-.branding {
-  position: relative;
-}
-
-/* line 10, ../scss/_branding.scss */
-.branding .brand {
-  background: url("path/to/branding-sprite.png") no-repeat 0 0;
-}
-
-/* line 14, ../scss/_branding.scss */
-.brand.brand- * {
-  background-position: center center;
-  height: auto;
-  width: auto;
-  margin: 0;
-  padding: 0;
-}
-
-/* line 22, ../scss/_branding.scss */
-.brand-block {
-  margin: 0 auto;
-}
-
-/* line 26, ../scss/_branding.scss */
-.primary .brand {
-  opacity: .94 !important;
-}
-
-/* Branding sprite (partner & third party logos). */
-/*
- * Banners & badges.
- */
-/* line 5, ../scss/_badgers.scss */
-.banner {
-  background-color: #f40;
-  z-index: 3;
-  font-family: 'Passion One', sans-serif !important;
-  letter-spacing: .013em !important;
-}
-
-/* line 12, ../scss/_badgers.scss */
-.banner:before {
-  display: block;
-  content: " ";
-  position: absolute;
-  z-index: 0;
-  width: 0;
-  height: 0;
-  border-top: 38px solid #e30;
-  border-left: 38px solid transparent;
-  left: -32px;
-  top: 49px;
-}
-
-/* line 27, ../scss/_badgers.scss */
-.banner .tip:before {
-  display: block;
-  content: " ";
-  position: absolute;
-  z-index: 0;
-  width: 0;
-  height: 0;
-  border-bottom: 38px solid #e30;
-  border-left: 38px solid transparent;
-  left: -32px;
-  top: 76px;
-}
-
-/* line 43, ../scss/_badgers.scss */
-.banner:after {
-  display: block;
-  content: " ";
-  position: absolute;
-  z-index: 0;
-  width: 0;
-  height: 0;
-  border-top: 38px solid #e30;
-  border-right: 38px solid transparent;
-  right: -32px;
-  top: 49px;
-}
-
-/* line 57, ../scss/_badgers.scss */
-.banner .tip:after {
-  display: block;
-  content: " ";
-  position: absolute;
-  z-index: 0;
-  width: 0;
-  height: 0;
-  border-bottom: 38px solid #e30;
-  border-right: 38px solid transparent;
-  right: -32px;
-  top: 76px;
-}
-
-/* line 72, ../scss/_badgers.scss */
-.banner-wrapper {
-  max-width: 92%;
-  width: 100%;
-  margin: 0 auto;
-}
-
-/* Banners, ribbons & badges. */
+/* @import "branding"; /* Branding sprite (partner & third party logos). */
+/* @import "badgers"; /* Banners, ribbons & badges. */
 /* shapes module. */
-/*
+/* ========================================================================== 
  * Pallete
  * 
  * Refer to: http://colours.neilorangepeel.com/
- */
+   ========================================================================== */
 /* line 12, ../scss/_palette.scss */
 .bg-lite-smoke {
   background-color: #efefef;
@@ -435,9 +332,9 @@ blockquote {
 /*
  * Block level items defining structure and rendering flows.
  */
-/*
+/* ========================================================================== 
  * Float clearing
- */
+   ========================================================================== */
 /* line 6, ../scss/_cascade.scss */
 .clear {
   clear: both;
@@ -478,9 +375,9 @@ blockquote {
   }
 }
 /* Floats & clearing. */
-/*
+/* ========================================================================== 
  * Wrappers & Containers
- */
+   ========================================================================== */
 /* line 6, ../scss/_containment.scss */
 .wrapper {
   height: auto;
@@ -526,11 +423,11 @@ blockquote {
 }
 
 /* Containers. */
-/*
+/* ========================================================================== 
  * Layout Ratios
  * 
  * Formula is Width by Height
- */
+   ========================================================================== */
 /* line 8, ../scss/_structure.scss */
 .halfbyhalf {
   height: 38px;
@@ -739,6 +636,9 @@ blockquote {
  * Shapes.
  */
 /* Dimensional structure. */
+/*  ========================================================================== 
+ * Edging includes borders, corners, & box shadows.
+   ========================================================================== */
 /*
  * Corners.
  */
@@ -749,9 +649,9 @@ blockquote {
 /*
  * Content level elements.
  */
-/*
+/* ========================================================================== 
  * Anchor blocks
- */
+   ========================================================================== */
 /* line 6, ../scss/_anchors.scss */
 a.anchor-block {
   display: block;
@@ -780,14 +680,17 @@ a.anchor-block.inline {
 }
 
 /* Default anchor styling, anchor blocks, anchor bars, & anchor lists. */
-/*
- * 
- */
+/* ========================================================================== 
+ * Content modules.
+   ========================================================================== */
 /* Sections, articles, asides, etc. */
+/* ========================================================================== 
+ * Lists
+   ========================================================================== */
 /* List styling */
-/*
- * 
- */
+/* ========================================================================== 
+ * Adding classes to native form elements for more control.
+  ========================================================================== */
 /* line 13, ../scss/_form-el.scss */
 .input-wrapper .input-el,
 .input-el {
@@ -811,13 +714,39 @@ a.anchor-block.inline {
 /*
  * States -- :hover, :active, :focus, :disabled, etc.
  */
-/* state.css */
+/* ========================================================================== 
+ * States [hover, focus, active, disabled, etc.]
+   ========================================================================== */
+/* line 6, ../scss/_states.scss */
+a:hover {
+  text-decoration: underline;
+  opacity: 1;
+}
+
+/* line 11, ../scss/_states.scss */
+a,
+input[type="email"],
+input[type="submit"],
+label {
+  -webkit-transition: opacity 0.2s ease-in-out;
+  -o-transition: opacity 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out;
+  opacity: .85;
+}
+
+/* line 22, ../scss/_states.scss */
+input[type="submit"]:hover,
+label:hover {
+  cursor: pointer;
+  opacity: 1;
+}
+
 /*
  * Additional, non-native components.
  */
-/*
+/* ========================================================================== 
  * Ad Blocks
- */
+   ========================================================================== */
 /* line 7, ../scss/_ads.scss */
 .ad-wrapper {
   padding-top: .5em;
@@ -869,41 +798,41 @@ a.anchor-block.inline {
 /*
  * Utility classes.
  */
-/*
+/* ========================================================================== 
  * General utility classes.
- */
-/* line 6, ../scss/_utility.scss */
+   ========================================================================== */
+/* line 7, ../scss/_utility.scss */
 a {
   text-decoration: none;
 }
 
-/* line 10, ../scss/_utility.scss */
+/* line 11, ../scss/_utility.scss */
 .action {
   text-transform: uppercase;
   letter-spacing: .0148em;
 }
 
-/* line 15, ../scss/_utility.scss */
+/* line 16, ../scss/_utility.scss */
 .action:hover {
   text-decoration: none !important;
 }
 
-/* line 19, ../scss/_utility.scss */
+/* line 20, ../scss/_utility.scss */
 .v-middle {
   position: relative;
   top: 50%;
   transform: translateY(-50%);
 }
 
-/* line 25, ../scss/_utility.scss */
+/* line 26, ../scss/_utility.scss */
 .full-height {
   height: 100%;
 }
 
 /* General utility classes */
-/*
- * Zoom
- */
+/* ========================================================================== 
+ * Scale 
+   ========================================================================== */
 /* line 6, ../scss/_scale.scss */
 .zoom-10 {
   zoom: .13;

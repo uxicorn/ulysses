@@ -1,11 +1,11 @@
-/*
+/* ========================================================================== 
  * Ulysses, "uly.css, uly.scss" is intended to take CSS design to the next level.
  * 
  * Removing the pain of understanding CSS, 
- * designers can simply add predefined semantic classes to HTML elements
- * that quickly create reliably balanced, modular design for web interfaces.
+ * designers can simply add predefined  classes to HTML elements
+ * quickly creating reliably balanced, modular design.
  *  
- */
+   ========================================================================== */
 
 /*
  * Preload heavier assets: fonts, icons, gradients, sprites, etc.
@@ -20,8 +20,8 @@
  * Palette includes the 4 color scheme or theme for the web property.
  */
 
-@import "branding"; /* Branding sprite (partner & third party logos). */
-@import "badgers"; /* Banners, ribbons & badges. */
+/* @import "branding"; /* Branding sprite (partner & third party logos). */
+/* @import "badgers"; /* Banners, ribbons & badges. */
 /* shapes module. */
 @import "palette"; /* Swatches, background & typeface color, texture patterns. */
 
@@ -50,7 +50,7 @@
  * States -- :hover, :active, :focus, :disabled, etc.
  */
 
-/* state.css */
+@import "states";
 
 /*
  * Additional, non-native components.
