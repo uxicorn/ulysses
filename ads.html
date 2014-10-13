@@ -4,20 +4,60 @@
   <title>Ulysses UI - CSS Utility Classes</title>
   <meta char="utf-8">
 
+  <link href='http://fonts.googleapis.com/css?family=Alegreya+SC:400,700,900|Lato:400|Merriweather:700' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/uly.css">
   <style>
-
-
+    
+    .masthead > nav *,
+    .base-em h6 {
+      font-family: 'Alegreya SC', serif;
+    }
+    
+    .base-em h6 {
+      font-weight: normal;
+    }
+    
+    .base-em {
+      font-family: 'Lato', sans-serif;
+    }
+    
+    .masthead > h1 {
+      margin-top: .26em;
+    }
+    
+    .base-em h1, h2, h3 {
+      font-family: 'Merriweather', serif;
+    }
 
   </style>
 </head>
 <body class="base-em">
   <header class="masthead primary container">
+    <nav>
+      <a href="index.html" class="anchor-block brand">
+        <small>
+          Ulysses
+        </small>
+      </a>
+    </nav>
     <h1>Ads</h1>
     <p>
       Ads are everywhere and we have to account for them with our UI framework.
     </p>
+    <p>
+      Ulysses' ad-blocks are always contained in an ad-wrapper and have a chained ad-unit class to the ad-block. 
+    </p>
+    <p>
+      The ad-wrapper provides the optional lite-smoke background color and center alignment for inner text elements.
+    </p>
+    <p>
+      The ad-unit itself is a generic class that acts as a hook to show pointers on hover, while the actual dimensions are chained to the ad-unit with it's intended iab.net unit name <i>(e.g. med-rect, billboard, leaderboard, etc.).</i> 
+    </p>
+    <p>
+      The "FPO" img element is for placement only and should be replaced with the ad script intended to fill the space.
+    </p>
+    <br>
     <hr>
   </header>
   <div id="main" class="primary container clear">
@@ -28,7 +68,7 @@
       <p>
         Billboard ads' height expand and collapse based on active state and often play interactive media. It's native size [970x90] is only opropriate for landscape oriented viewports 1024px wide and above.
       </p>
-      <div class="ad-wrapper bg-lite-smoke">
+      <div class="ad-wrapper bg-lite-smoke centered">
         <div class="ad-block ad-unit billboard bg-smoke">
             <img src="http://placehold.it/970x90&text=FPO">
         </div>
@@ -60,8 +100,8 @@
       <h3>
         Half Page
       </h3>
-      <div class="ad-wrapper bg-lite-smoke">
-        <div class="ad-block inline ad-unit half-page bg-smoke">
+      <div class="ad-wrapper bg-lite-smoke centered">
+        <div class="ad-block --inline ad-unit half-page bg-smoke">
           <img src="http://placehold.it/300x600&text=FPO">
         </div>
         <small>
@@ -76,7 +116,7 @@
       <h3>
         Leaderboard
       </h3>
-      <div class="ad-wrapper bg-lite-smoke">
+      <div class="ad-wrapper bg-lite-smoke centered">
         <div class="ad-block ad-unit leaderboard bg-smoke">
           <img src="http://placehold.it/728x90&text=FPO">
         </div>
@@ -85,6 +125,14 @@
         </small>
       </div>
     </section>
+    <br>
+    <hr>
+    <br>
+    <footer>
+      <h6>
+        &copy; 2014 Ulysses. <i>All rights reserved.</i>
+      </h6>
+    </footer>
 
   </div>
 </body>

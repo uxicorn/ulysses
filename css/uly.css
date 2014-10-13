@@ -767,28 +767,32 @@ label:hover {
   margin-left: .5em;
   margin-right: .5em;
 }
+/* line 27, ../scss/_ads.scss */
+.ad-wrapper .ad-block:hover {
+  cursor: pointer;
+}
 
-/* line 30, ../scss/_ads.scss */
+/* line 34, ../scss/_ads.scss */
 .ad-unit {
   padding: 0;
   margin: 0 auto;
 }
-/* line 35, ../scss/_ads.scss */
+/* line 39, ../scss/_ads.scss */
 .ad-unit.half-page {
   height: 600px;
   width: 300px;
 }
-/* line 40, ../scss/_ads.scss */
+/* line 44, ../scss/_ads.scss */
 .ad-unit.billboard {
   min-height: 90px;
   width: 970px;
 }
-/* line 45, ../scss/_ads.scss */
+/* line 49, ../scss/_ads.scss */
 .ad-unit.leaderboard {
   height: 90px;
   width: 728px;
 }
-/* line 50, ../scss/_ads.scss */
+/* line 54, ../scss/_ads.scss */
 .ad-unit.med-rect {
   height: 250px;
   width: 300px;
